@@ -1,0 +1,21 @@
+[project]
+name = "subforge"
+version = "0.1.0"
+description = "Autonomous subtitle generation & translation pipeline with strict 42-char broadcast formatting"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["subforge"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
